@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "hilda"
+version = "3.0.0"
+description = "A discord bot for managing server messages."
+authors = ["Em Dash <mbyx.dev@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+discord = { extras = ["voice"], version = "^2.1.0" }
+arrow = "^1.2.3"
+coloredlogs = "^15.0.1"
+python-dotenv = "^0.21.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
